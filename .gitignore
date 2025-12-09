@@ -1,0 +1,14 @@
+# Rust编译产物目录
+/target/
+# Rust代码备份文件
+**/*.rs.bk
+# Cargo依赖锁文件
+Cargo.lock
+
+# 缓存文件（大文件不上传）
+real-time-system/data/cache.json
+preprocessing-system/output/*.json
+
+# 保留示例文件（空目录提交用）
+!real-time-system/data/.gitkeep
+!preprocessing-system/output/.gitkeep

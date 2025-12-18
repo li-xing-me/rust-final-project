@@ -1,6 +1,21 @@
 [package]
 name = "real-time-system"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
+actix-web = "4.4"
+actix-rt = "2.9"
+dashmap = "5.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.35", features = ["full"] }
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+
+[dev-dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+test-log = "0.2"
